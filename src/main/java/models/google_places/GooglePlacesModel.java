@@ -30,7 +30,7 @@ public class GooglePlacesModel extends NetworkCore {
         requestedParams.put("inputtype", model.getInputtype());
         requestSpecBuilder.setBaseUri(GOOGLE_PLACES_SEVER + GOOGLE_PLACES_PATH +GOOGLE_PLACES_ENDPOINT_SEARCH)
                 .addQueryParams(requestedParams);
-        sendRequestAndGetResponse(Method.GET,200);
+        sendRequestAndGetResponse(method,statusCode);
        return this;
     }
 
